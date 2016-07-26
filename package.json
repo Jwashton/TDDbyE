@@ -1,0 +1,21 @@
+{
+  "name": "TDDbyE",
+  "version": "1.0.0",
+  "description": "Code samples from Test-Driven Development by Example, in various languages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jwashton/TDDbyE.git"
+  },
+  "keywords": [],
+  "author": "J. William Ashton",
+  "license": "ISC",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/Jwashton/TDDbyE/issues"
+  },
+  "homepage": "https://github.com/Jwashton/TDDbyE#readme"
+}
