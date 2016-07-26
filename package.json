@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/Jwashton/TDDbyE/issues"
   },
-  "homepage": "https://github.com/Jwashton/TDDbyE#readme"
+  "homepage": "https://github.com/Jwashton/TDDbyE#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "eslint": "^3.1.1",
+    "eslint-watch": "^2.1.13"
+  }
 }
