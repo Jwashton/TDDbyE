@@ -23,5 +23,11 @@
     "ava": "^0.15.2",
     "eslint": "^3.1.1",
     "eslint-watch": "^2.1.13"
+  },
+  "ava": {
+    "require": ["babel-register"]
+  },
+  "babel": {
+    "presets": ["es2015"]
   }
 }
