@@ -1,4 +1,5 @@
 import test from 'ava';
+import createDollar from '../lib/dollar';
 
 test('Canary test', t => {
   t.pass();
