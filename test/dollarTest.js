@@ -7,8 +7,10 @@ test('Canary test', t => {
 
 test('Multiplication', t => {
   const five = createDollar(5);
+  let product;
 
-  five.times(2);
-
-  t.is(10, five.amount);
+  product = five.times(2);
+  t.is(10, product.amount);
+  product = five.times(3);
+  t.is(15, product.amount);
 });
