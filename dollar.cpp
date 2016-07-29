@@ -22,4 +22,5 @@ TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
 
 TEST_CASE("Dollars can be equated to each other", "[Dollar]") {
   REQUIRE( Dollar(5) == Dollar(5) );
+  REQUIRE_FALSE( Dollar(5) == Dollar(6) );
 }
