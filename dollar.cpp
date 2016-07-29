@@ -4,8 +4,8 @@
 
 Dollar::Dollar(int amount) : amount(amount) {};
 
-void Dollar::operator*(__attribute__((unused)) int multiplier) {
-  amount = amount * 2;
+void Dollar::operator*(int multiplier) {
+  amount *= multiplier;
 };
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
