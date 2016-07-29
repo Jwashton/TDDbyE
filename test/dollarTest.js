@@ -17,4 +17,5 @@ test('Multiplication', t => {
 
 test('Equality', t => {
   t.true(createDollar(5).equals(createDollar(5)));
+  t.false(createDollar(5).equals(createDollar(6)));
 });
