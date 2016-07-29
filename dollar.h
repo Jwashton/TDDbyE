@@ -5,10 +5,11 @@ class Dollar {
   public:
   Dollar(int amount);
 
-  int amount;
-
   Dollar operator*(int multiplier);
   bool operator==(Dollar rhs);
+
+  private:
+  int amount;
 };
 
 #endif // _DOLLAR_H_
