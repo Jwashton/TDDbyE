@@ -8,8 +8,8 @@ Dollar Dollar::operator*(int multiplier) {
   return Dollar(amount * multiplier);
 };
 
-bool Dollar::operator==(__attribute__((unused)) Dollar rhs) {
-  return true;
+bool Dollar::operator==(Dollar rhs) {
+  return amount == rhs.amount;
 };
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
