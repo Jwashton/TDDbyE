@@ -13,6 +13,6 @@ test('Multiplication', t => {
 });
 
 test('Equality', t => {
-  t.true(createDollar(5).equals(createDollar(5)));
-  t.false(createDollar(5).equals(createDollar(6)));
+  t.deepEqual(createDollar(5), createDollar(5));
+  t.notDeepEqual(createDollar(5), createDollar(6));
 });
