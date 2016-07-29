@@ -10,7 +10,7 @@ test('Multiplication', t => {
   let product;
 
   product = five.times(2);
-  t.is(10, product.amount);
+  t.deepEqual(createDollar(10), product);
   product = five.times(3);
   t.is(15, product.amount);
 });
