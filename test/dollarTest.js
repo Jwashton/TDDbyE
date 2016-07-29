@@ -14,3 +14,7 @@ test('Multiplication', t => {
   product = five.times(3);
   t.is(15, product.amount);
 });
+
+test('Equality', t => {
+  t.true(createDollar(5).equals(createDollar(5)));
+});
