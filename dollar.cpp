@@ -3,7 +3,7 @@
 #include "dollar.h"
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
-  Dollar five = new Dollar(5);
+  Dollar five = Dollar(5);
 
   five.times(2);
 
