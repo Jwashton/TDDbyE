@@ -4,14 +4,16 @@
 
 Dollar::Dollar(int amount) : amount(amount) {};
 
-void Dollar::operator*(int multiplier) {
+Dollar Dollar::operator*(int multiplier) {
   amount *= multiplier;
+
+  return Dollar(0);
 };
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
   Dollar five = Dollar(5);
-
-  five * 2;
-
+  Dollar product = five * 2;
   REQUIRE( 10 == five.amount );
+  product = five * 3;
+  REQUIRE( 15 == five.amount );
 }
