@@ -7,12 +7,9 @@ test('Canary test', t => {
 
 test('Multiplication', t => {
   const five = createDollar(5);
-  let product;
 
-  product = five.times(2);
-  t.deepEqual(createDollar(10), product);
-  product = five.times(3);
-  t.is(15, product.amount);
+  t.deepEqual(createDollar(10), five.times(2));
+  t.deepEqual(createDollar(15), five.times(3));
 });
 
 test('Equality', t => {
