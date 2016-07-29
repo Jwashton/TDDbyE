@@ -2,7 +2,10 @@
 #include "catch.hpp"
 #include "dollar.h"
 
-void Dollar::times(int multiplier) {
+Dollar::Dollar(__attribute__((unused)) int amount) {
+};
+
+void Dollar::times(__attribute__((unused)) int multiplier) {
 };
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
