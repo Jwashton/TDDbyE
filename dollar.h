@@ -8,6 +8,7 @@ class Dollar {
   int amount;
 
   Dollar operator*(int multiplier);
+  bool operator==(Dollar rhs);
 };
 
 #endif // _DOLLAR_H_

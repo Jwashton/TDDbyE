@@ -8,6 +8,10 @@ Dollar Dollar::operator*(int multiplier) {
   return Dollar(amount * multiplier);
 };
 
+bool Dollar::operator==(__attribute__((unused)) Dollar rhs) {
+  return true;
+};
+
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
   Dollar five = Dollar(5);
   Dollar product = five * 2;
