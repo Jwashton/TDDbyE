@@ -15,3 +15,7 @@ TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
   product = five * 3;
   REQUIRE( 15 == product.amount );
 }
+
+TEST_CASE("Dollars can be equated to each other", "[Dollar]") {
+  REQUIRE( Dollar(5) == Dollar(5) );
+}
