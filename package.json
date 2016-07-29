@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "lint": "eslint --color lib/ test/"
+    "lint": "eslint --color lib/ test/",
+    "lint:watch": "esw --watch --color lib/ test/"
   },
   "repository": {
     "type": "git",
