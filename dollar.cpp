@@ -5,9 +5,7 @@
 Dollar::Dollar(int amount) : amount(amount) {};
 
 Dollar Dollar::operator*(int multiplier) {
-  amount *= multiplier;
-
-  return Dollar(0);
+  return Dollar(amount * multiplier);
 };
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
