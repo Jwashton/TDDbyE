@@ -1,5 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
+#include "dollar.h"
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
   Dollar five = new Dollar(5);
