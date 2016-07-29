@@ -14,10 +14,9 @@ bool Dollar::operator==(Dollar rhs) {
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
   Dollar five = Dollar(5);
-  Dollar product = five * 2;
-  REQUIRE( 10 == product.amount );
-  product = five * 3;
-  REQUIRE( 15 == product.amount );
+
+  REQUIRE( Dollar(10) == five * 2 );
+  REQUIRE( Dollar(15) == five * 3 );
 }
 
 TEST_CASE("Dollars can be equated to each other", "[Dollar]") {
