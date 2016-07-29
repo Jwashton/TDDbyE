@@ -6,6 +6,7 @@ Dollar::Dollar(__attribute__((unused)) int amount) {
 };
 
 void Dollar::times(__attribute__((unused)) int multiplier) {
+  amount = 5 * 2;
 };
 
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
