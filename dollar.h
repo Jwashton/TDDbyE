@@ -4,6 +4,8 @@
 class Dollar {
   public:
   Dollar(int amount) {}
+
+  void times(int multiplier);
 };
 
 #endif // _DOLLAR_H_
