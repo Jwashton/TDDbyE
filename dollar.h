@@ -7,7 +7,7 @@ class Dollar {
 
   int amount;
 
-  void times(int multiplier);
+  void operator*(int multiplier);
 };
 
 #endif // _DOLLAR_H_
