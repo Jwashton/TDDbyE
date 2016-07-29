@@ -13,7 +13,7 @@ Dollar Dollar::operator*(int multiplier) {
 TEST_CASE("Dollar objects can be multiplied by constants", "[Dollar]") {
   Dollar five = Dollar(5);
   Dollar product = five * 2;
-  REQUIRE( 10 == five.amount );
+  REQUIRE( 10 == product.amount );
   product = five * 3;
-  REQUIRE( 15 == five.amount );
+  REQUIRE( 15 == product.amount );
 }
