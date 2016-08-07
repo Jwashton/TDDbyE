@@ -1,5 +1,5 @@
 import test from 'ava';
-import createDollar from '../lib/dollar';
+import { createDollar, createFranc } from '../lib/dollar';
 
 test('Canary test', t => {
   t.pass();
@@ -10,6 +10,13 @@ test('Multiplication', t => {
 
   t.deepEqual(createDollar(10), five.times(2));
   t.deepEqual(createDollar(15), five.times(3));
+});
+
+test('FrancMultiplication', t => {
+  const five = createFranc(5);
+
+  t.deepEqual(createFranc(10), five.times(2));
+  t.deepEqual(createFranc(15), five.times(3));
 });
 
 test('Equality', t => {
