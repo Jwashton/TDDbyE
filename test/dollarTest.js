@@ -22,4 +22,6 @@ test('FrancMultiplication', t => {
 test('Equality', t => {
   t.true(createDollar(5).equals(createDollar(5)));
   t.false(createDollar(5).equals(createDollar(6)));
+  t.true(createFranc(5).equals(createFranc(5)));
+  t.false(createFranc(5).equals(createFranc(6)));
 });
