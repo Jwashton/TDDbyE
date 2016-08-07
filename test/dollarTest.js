@@ -26,3 +26,8 @@ test('Equality', t => {
   t.false(mint.francs(5).equals(mint.francs(6)));
   t.false(mint.francs(5).equals(mint.dollars(5)));
 });
+
+test('Currency', t => {
+  t.is('USD', mint.dollars(1).currency);
+  t.is('CHF', mint.francs(1).currency);
+});
