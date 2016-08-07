@@ -8,18 +8,18 @@ test('Canary test', t => {
 test('Multiplication', t => {
   const five = createDollar(5);
 
-  t.deepEqual(createDollar(10), five.times(2));
-  t.deepEqual(createDollar(15), five.times(3));
+  t.true(createDollar(10).equals(five.times(2)));
+  t.true(createDollar(15).equals(five.times(3)));
 });
 
 test('FrancMultiplication', t => {
   const five = createFranc(5);
 
-  t.deepEqual(createFranc(10), five.times(2));
-  t.deepEqual(createFranc(15), five.times(3));
+  t.true(createFranc(10).equals(five.times(2)));
+  t.true(createFranc(15).equals(five.times(3)));
 });
 
 test('Equality', t => {
-  t.deepEqual(createDollar(5), createDollar(5));
-  t.notDeepEqual(createDollar(5), createDollar(6));
+  t.true(createDollar(5).equals(createDollar(5)));
+  t.false(createDollar(5).equals(createDollar(6)));
 });
